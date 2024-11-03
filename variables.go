@@ -31,11 +31,21 @@ func compositeTypes() {
 
 	dict := map[string]int{"one": 1, "two": 2, "three": 3}
 	fmt.Println(dict["one"])
+}
 
+type person struct {
+	name string
+	age  int
+}
+
+func structs() {
+	p := person{name: "Make", age: 30}
+	fmt.Printf("Name: %s, Age: %d\n", p.name, p.age)
 }
 
 func main() {
 	basicTypes()
 	shortVars()
 	compositeTypes()
+	structs()
 }
