@@ -21,7 +21,21 @@ func shortVars() {
 	fmt.Println(b, s, i, f64, r)
 }
 
+func compositeTypes() {
+	nums := [3]int{1, 2, 3}
+	fmt.Println(nums[1])
+
+	words := []string{"incurring", "charge", "Decent", "despite", "e", "f", "g"}
+	words = append(words, `go`)
+	fmt.Println(words)
+
+	dict := map[string]int{"one": 1, "two": 2, "three": 3}
+	fmt.Println(dict["one"])
+
+}
+
 func main() {
 	basicTypes()
 	shortVars()
+	compositeTypes()
 }
